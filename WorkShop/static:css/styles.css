@@ -1,7 +1,19 @@
+/* Base Styles */
+
+:root {
+    --primary-color: #03A9F4;
+    --secondary-color: #35434a;
+    --accent-color: #448AFF;
+    --text-color: #fff;
+    --background-color: #f4f3f3;
+    --button-color: #2196F3;
+    --button-hover-color: #0b7dda;
+}
+
 body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
-    padding: 0px;
-    background-color: #f4f3f3;
+    padding: 0;
+    background-color: var(--background-color);
 }
 
 .container {
@@ -10,9 +22,12 @@ body {
     overflow: hidden;
 }
 
+
+/* Header Styles */
+
 header {
-    background: linear-gradient(#03A9F4, #35434a);
-    border-bottom: #448AFF 3px solid;
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
+    border-bottom: var(--accent-color) 3px solid;
     height: 120px;
     width: 100%;
     padding-top: 30px;
@@ -23,33 +38,36 @@ header {
     background-color: blue;
     height: 100px;
     width: 100%;
-    margin: 0px;
+    margin: 0;
 }
 
 #brandname {
     float: left;
     font-size: 30px;
-    color: #fff;
+    color: var(--text-color);
     margin: 10px;
 }
 
 header h2 {
     text-align: center;
-    color: #fff;
+    color: var(--text-color);
 }
 
+
+/* Button Styles */
+
 .btn-info {
-    background-color: #2196F3;
+    background-color: var(--button-color);
     height: 40px;
     width: 100px;
 }
 
-
-/* Blue */
-
 .btn-info:hover {
-    background: #0b7dda;
+    background: var(--button-hover-color);
 }
+
+
+/* Results Styles */
 
 .resultss {
     border-radius: 15px 50px;

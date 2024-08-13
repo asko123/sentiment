@@ -17,7 +17,7 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict_fun():
-    clf_path = '/Users/Tawfiq/Desktop/gpt-pilot-backup-0-2-7-73a8c223/workspace/WorkShop/LR_Pipeline.pickle'
+    clf_path = '../workspace/WorkShop/LR_Pipeline.pickle'
     
     print("Classifier path:", clf_path)
     
