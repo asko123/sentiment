@@ -37,3 +37,4 @@ async def predict_fun(request: Request, message: str = Form(...)):
 if __name__ == '__main__':
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    #uvicorn app_1:app --reload
